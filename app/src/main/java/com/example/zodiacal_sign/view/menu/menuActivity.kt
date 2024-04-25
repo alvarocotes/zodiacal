@@ -3,14 +3,11 @@ package com.example.zodiacal_sign.view.menu
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.zodiacal_sign.R
-import com.example.zodiacal_sign.view.getMySign.getMySignActivity
+import com.example.zodiacal_sign.view.getMySign.GetMySignActivity
 
 class menuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,7 +23,7 @@ class menuActivity : AppCompatActivity() {
 
 
         sabersigno.setOnClickListener {
-            val intent2 = Intent(this,getMySignActivity::class.java)
+            val intent2 = Intent(this,GetMySignActivity::class.java)
             startActivity(intent2)
         }
 

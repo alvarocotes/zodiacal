@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Zodiacal_sign</string>
+    <string name="txt_btn_get_my_sign">Get My Sign</string>
+    <string name="txt_hint_month">Month*</string>
+    <string name="txt_hint_day">Day*</string>
+    <string name="txt_hint_year">Year*</string>
+    <string name="txt_input_your_birth_day">Ingrese Su Fecha De Nacimiento</string>
 </resources>
