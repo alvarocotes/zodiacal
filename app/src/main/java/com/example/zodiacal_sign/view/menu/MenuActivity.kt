@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.zodiacal_sign.databinding.ActivityMenuBinding
+import com.example.zodiacal_sign.view.compatibility.CompatibilityActivity
 import com.example.zodiacal_sign.view.getMySign.GetMySignActivity
 
 class MenuActivity : AppCompatActivity() {
@@ -21,11 +22,16 @@ class MenuActivity : AppCompatActivity() {
         binding.txtGreeting.text = saludo
         initListeners()
 
+
     }
 
     private fun initListeners() {
         binding.btnGetMySign.setOnClickListener {
             startActivity(Intent(this, GetMySignActivity::class.java))
+        }
+
+        binding.btnCompatibility.setOnClickListener {
+            startActivity(Intent(this,CompatibilityActivity::class.java))
         }
     }
 
