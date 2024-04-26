@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Zodiacal_sign"
         tools:targetApi="31">
         <activity
-            android:name=".view.getMySign.getMySignActivity"
+            android:name=".view.getMySign.GetMySignActivity"
             android:exported="false" />
         <activity
             android:name=".view.menu.MenuActivity"
