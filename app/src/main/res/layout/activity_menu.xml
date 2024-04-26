@@ -5,42 +5,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.menu.menuActivity"
+    tools:context=".view.menu.MenuActivity"
     >
 
 
     <TextView
-        android:id="@+id/saludo"
+        android:id="@+id/txt_greeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="aqui va texto a presentar"
         android:textSize="20sp"
-        app:layout_constraintVertical_bias="0.1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/saberSigno"
+        android:id="@+id/btn_Get_My_Sign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="saber mi signo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saludo"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_greeting"
+        />
 
     <Button
+        android:id="@+id/btn_Compatibility"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="calcular compatibilidad"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/saberSigno" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Get_My_Sign" />
 
 
 

@@ -16,10 +16,10 @@
             android:name=".view.getMySign.getMySignActivity"
             android:exported="false" />
         <activity
-            android:name=".view.menu.menuActivity"
+            android:name=".view.menu.MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".view.login.loginActivity"
+            android:name=".view.login.LoginActivity"
             android:exported="true"
             android:theme="@style/Theme.Zodiacal_sign">
             <intent-filter>
