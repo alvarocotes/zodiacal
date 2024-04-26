@@ -41,7 +41,7 @@
                 android:id="@+id/txt_person_1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Person 1"
+                android:text="@string/txt_person1"
                 android:textSize="20sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +60,7 @@
                     android:id="@+id/txt_edt_name_person1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name" />
+                    android:hint="@string/txt_hint_input_name" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,14 +77,13 @@
                     android:id="@+id/txt_edt_sign_person_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Sign" />
+                    android:hint="@string/txt_hint_input_sign" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
     </com.google.android.material.card.MaterialCardView>
 
@@ -107,7 +106,7 @@
                 android:id="@+id/txt_person_2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:text="Person 2"
+                android:text="@string/txt_person2"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -116,6 +115,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edt_name_person_2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/txt_person_2"
@@ -126,13 +126,14 @@
                     android:id="@+id/txt_edt_name_person_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Name"
+                    android:hint="@string/txt_hint_input_name"
 
                     />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edt_sign_person_2"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintTop_toBottomOf="@id/edt_name_person_2"
@@ -143,7 +144,7 @@
                     android:id="@+id/txt_edt_sing_person_2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Sign"
+                    android:hint="@string/txt_hint_input_sign"
                     />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -151,9 +152,28 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
     </com.google.android.material.card.MaterialCardView>
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_get_compatibility"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_result_compatibility"
+        app:layout_constraintStart_toStartOf="@id/txt_result_compatibility"
+        app:layout_constraintEnd_toEndOf="@id/txt_result_compatibility"
+        android:layout_marginTop="30dp"
+        android:text="@string/txt_btn_get_my_compatibility"
+        tools:ignore="InvalidId" />
 
-
+<com.google.android.material.textview.MaterialTextView
+    android:id="@+id/txt_result_compatibility"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    tools:text="presenter resultant"
+    android:textAlignment="center"
+    android:textSize="20sp"
+    app:layout_constraintTop_toBottomOf="@id/card_view_person_2"
+    app:layout_constraintStart_toStartOf="@id/card_view_person_2"
+    app:layout_constraintEnd_toEndOf="@id/card_view_person_2"
+/>
 </androidx.constraintlayout.widget.ConstraintLayout>

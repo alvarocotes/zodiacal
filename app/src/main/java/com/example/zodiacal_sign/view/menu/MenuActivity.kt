@@ -18,7 +18,7 @@ class MenuActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val name = intent.extras?.getString("Name")
-        val saludo = "Hello $name, Como te puedo ayudar hoy"
+        val saludo = "Hello $name, How can I help you today?"
         binding.txtGreeting.text = saludo
         initListeners()
 

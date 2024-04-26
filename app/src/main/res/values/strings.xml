@@ -6,9 +6,13 @@
     <string name="txt_btn_compatibility">Get my compatibility</string>
     <string name="txt_compatibility">Hello, who do you want to know if you are compatible with? </string>
     <string name="txt_hint_input_name">Name</string>
+    <string name="txt_hint_input_sign">Sign</string>
+    <string name="txt_person1">Person 1</string>
+    <string name="txt_person2">Person 2</string>
     <string name="txt_btn_get_my_sign">Get My Sign</string>
     <string name="txt_hint_month">Month*</string>
     <string name="txt_hint_day">Day*</string>
     <string name="txt_hint_year">Year*</string>
     <string name="txt_input_your_birth_day">Input your birthdate</string>
+    <string name="txt_btn_get_my_compatibility">Get compatibility</string>
 </resources>
