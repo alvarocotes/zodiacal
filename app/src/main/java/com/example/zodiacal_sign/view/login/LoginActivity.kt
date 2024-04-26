@@ -18,20 +18,16 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLogin2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.edtImputName.doAfterTextChanged {
-            if (binding.edtImputName.text!!.isNotEmpty()){
-                binding.btnGetStared.isEnabled = true
-            }else{
-                binding.btnGetStared.isEnabled = false
-            }
+        binding.edtName.doAfterTextChanged {
+            binding.btnGetStared.isEnabled = binding.edtName.text!!.isNotEmpty()
 
         }
 
 
         binding.btnGetStared.setOnClickListener {
-                val intent = Intent(this, MenuActivity::class.java)
-                intent.putExtra("Name", binding.edtImputName.text.toString())
-                startActivity(intent)
-        }
+            val intent = Intent(this, MenuActivity::class.java)
+            intent.putExtra("Name", binding.edtName.text.toString())
+            startActivity(intent)
         }
     }
+}
