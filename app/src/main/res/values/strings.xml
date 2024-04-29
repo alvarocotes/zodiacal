@@ -5,8 +5,8 @@
     <string name="txt_btn_know_my_sign">Know my sign</string>
     <string name="txt_btn_compatibility">Get my compatibility</string>
     <string name="txt_compatibility">Hello, who do you want to know if you are compatible with? </string>
-    <string name="txt_hint_input_name">Name</string>
-    <string name="txt_hint_input_sign">Sign</string>
+    <string name="txt_hint_input_name">Name*</string>
+    <string name="txt_hint_input_sign">Sign*</string>
     <string name="txt_person1">Person 1</string>
     <string name="txt_person2">Person 2</string>
     <string name="txt_btn_get_my_sign">Get My Sign</string>
